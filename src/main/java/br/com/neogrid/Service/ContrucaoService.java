@@ -4,7 +4,6 @@ package br.com.neogrid.Service;
 import br.com.neogrid.Model.Construcao;
 import br.com.neogrid.Model.Veiculo;
 import br.com.neogrid.Repository.ContrucaoRepository;
-import br.com.neogrid.Repository.VeiculoRepository;
 import br.com.neogrid.Util.Datas;
 import br.com.neogrid.Util.Retorno;
 import br.com.neogrid.Util.ServiceGenerico;
@@ -39,6 +38,14 @@ public class ContrucaoService extends ServiceGenerico<Construcao> {
         if (retorno.isErro()) {
             return retorno;
         }
+
+        if (construcao.getCodigo() == null || construcao.getCorExterna() == null || construcao.getPintura() == null || construcao.getRevestimentoInterno() == null) {
+            return new Retorno("Itens faltando para a contrução!");
+        } else if (modeloService.buscaPorCodigo(construcao.getCodigo()) == null) {
+            return new Retorno("Modelo informado não existe!");
+
+        }
+
 
         Veiculo veiculo = new Veiculo();
 
