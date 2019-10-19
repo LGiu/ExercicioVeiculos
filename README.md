@@ -104,3 +104,15 @@ Processo de construção deve ser implementado como uma linha de montagem (pipel
 
 
 _________________________________________________________________________________________
+
+O sistema foi desenvolvido em Java 8, utilizando o framework Spring Boot. A lingugem de banco utilizada foi o Mysql.
+
+Configurações iniciais do sistema:
+
+Deve-se possui o Mysql Server instalado;
+
+Feito isso deve-se startar o projeto pra a criação das tabelas e colunas.
+
+Obs: A o usuário e senha padrões do banco são 'root' e 'root' respectivamente. Caso já possu o Mysql instalado com outro usuário e senha deve-se altera-los no arquivo application.properties do projeto.
+
+_____________________________________
