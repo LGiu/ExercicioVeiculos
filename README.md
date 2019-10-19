@@ -1,5 +1,4 @@
 
-_________________________________________________________________________________________
 
 O sistema foi desenvolvido em Java 8, utilizando o framework Spring Boot. A lingugem de banco utilizada foi o Mysql.
 
@@ -42,6 +41,6 @@ CONTRUCAO
 
 HEADER - Content-Type:application/json
 
-SALVAR - POST - http://127.0.0.1:8080/contrucao - JSON - { "codigo": "ABdC", "corExterna": "PR", "pintura": "S", "revestimentoInterno": "T" }
+SALVAR - POST - http://127.0.0.1:8080/contrucao - JSON - { "codigo": "ABC", "corExterna": "PR", "pintura": "S", "revestimentoInterno": "T" }
 
 BUSCA 1 REGISTRO - GET - http://127.0.0.1:8080/contrucao/5841eb49-ae7f-49ab-820c-6c793340d126
